@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人員介紹卡</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-color: #003;
+        }
+        .wrap{
+            width: 1200px;
+            display: flex;
+            margin: auto;
+        }
+        .item{
+            width: 368px;
+            margin: 15px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid rgb(204, 197, 197);
+            transform: translateY( 0px);
+            transition: .25s;
+        }
+        .item img{
+            width: 100%;
+            vertical-align: middle ;
+        }
+        .item h2{
+            border-bottom: 1px solid rgb(172, 164, 164);
+            padding-bottom: .3em;
+            margin-bottom: .4em;
+            font-weight: 900;
+            transition: .25s;
+        }
+        .item p{
+            line-height: 1.6;
+            font-weight: 300;
+            transition: .5s;
+        }
+        .item .txt{
+            padding: 20px;
+            position:relative;
+        }
+        .item .txt:before{
+            content: '';
+            position:absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            border-top:  50px solid transparent;
+            border-left: 184px solid rgb(252, 245, 245);
+            border-right: 184px solid rgb(247, 239, 239);
+            transform: translateY(-100%);
+        }
+        .item:hover{
+            transform: translateY(-50px);
+
+        }
+        .item:hover .txt{
+            background-image: linear-gradient(0deg,rgb(243, 87, 14),rgb(241, 160, 9));
+        }
+        .item:hover .txt:before{
+            border-left: 184px solid rgb(241, 160, 9);
+            border-right: 184px solid rgb(241, 160, 9);
+        }
+        .item:hover h2{
+            color:white;
+            border-bottom-color:white;
+        }
+        .item:hover p{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="item"><img src="https://picsum.photos/300/300/?random=10">
+            <div class="txt">
+                <h2>第一段</h2>
+                <p>房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。</p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/300/?random=20">
+            <div class="txt">
+                <h2>第二段</h2>
+                <p>房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。</p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/300/?random=30">
+            <div class="txt">
+                <h2>第三段</h2>
+                <p>房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。房地產更新西安頓時屬於倒是某些，方面當。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
