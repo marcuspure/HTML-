@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(-30deg,rgb(189, 189, 247),rgb(248, 216, 157))
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 368px;
+    margin: 15px;
+    display: flex;
+    background-color: cornsilk;
+    border-radius: 10px solid rgb(252, 13, 13);
+    box-shadow: 0 10px 30px rgb(15, 14, 14);
+    opacity: .8;
+}
+.item .pic{
+    width: 50%;
+}
+.item .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .txt{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.item .txt h2{
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+.item .txt p{
+    font-weight: 400;
+}
+.item .txt .btn{
+    line-height: 1.5em;
+    border: 1px solid #ccc;
+    padding: 0 1em;
+    align-self: flex-end;
+    text-decoration: none;
+    border-radius: 200px;
+    margin: auto;
+    color: rgb(241, 9, 9);
+}
+.item .txt .btn:hover{
+    background-color: rgb(243, 160, 177);
+    color: rgb(92, 245, 207);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic"><img src="https://picsum.photos/400/400/?random=1">
+                </div>
+                <div class="txt">
+                    <h2>超通用橫式版面</h2>
+                    <p>皮膚最低退出就像都有病毒你知道商機美國，模擬挑戰魯蛇，興趣。
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic"><img src="https://picsum.photos/400/400/?random=2">
+                </div>
+                <div class="txt">
+                    <h2>超通用橫式版面</h2>
+                    <p>皮膚最低退出就像都有病毒你知道商機美國，模擬挑戰魯蛇，興趣。
+
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic"><img src="https://picsum.photos/400/400/?random=3">
+                </div>
+                <div class="txt">
+                    <h2>超通用橫式版面</h2>
+                    <p>皮膚最低退出就像都有病毒你知道商機美國，模擬挑戰魯蛇，興趣。
+
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
