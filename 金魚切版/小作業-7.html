@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+       body{
+           background-color: gray;
+           display: flex;
+            align-items: center;
+        
+
+       }
+
+        .wrap {
+            width: 960px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(143, 133, 133);
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 33%;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(151, 151, 241, 0.8);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity: 1s;  
+        }
+        .item:hover .txt{
+            opacity: 1;
+        }
+
+        .item h2 {
+            font-size: 28px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .item p {
+            font-size: 20px;
+            color: white;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=2">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=3">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=4">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+
+
+        
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=5">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=6">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/600/500/?random=7">
+            <div class="txt">
+                <h2>MINING,STRATEGY</h2>
+                <p>CREATEBLOCKCHAIN EASILY</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

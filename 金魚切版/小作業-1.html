@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            background-color: #2b3238;
+            width: 100%;
+            height: 960px;
+            display: flex;
+            color: cornsilk;
+        }
+       .left{
+           flex: 4;
+           align-items: center;
+       }
+       h1{
+           color: rgb(55, 55, 247);
+       }
+
+
+
+        .item{
+            font-size: 30px;
+            border-bottom: cornsilk solid 1px;
+        }
+        .itemle{
+            display: flex;
+            font-size: 25px;
+            margin: 20px;
+            align-items: center;
+            justify-content: left: ;
+           
+            height: 150px;
+        }
+       .item img{
+           width: 100%;
+           margin: 10px;
+       }
+        .item p{
+            width: 300px;
+            height: 300px;
+            border: inline block;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+        .right{
+            flex:6;
+            width: 100%;     
+            flex-direction:column;   
+           
+        }
+      .right .info .item{
+        height: 180px;
+      }
+
+
+
+      a p {
+    color: white;
+    text-decoration: none;
+    background-color: #421af1;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 140px;
+    font-size: 12px;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 30px;
+      }
+    .right2{
+        font-size: 40px;
+    }
+
+    </style>
+</head>
+<body>
+    
+<div class="wrap">
+    <div class="left">
+        <h1>GET IN TOUCH</h1>
+        <h1>Contact Details</h1>
+        <div class="itemle">
+            <p>If you are interested in working with us then please drop us a line, we would love to hear from you.</p></div>
+        <div class="itemle"><img src="https://picsum.photos/70/70/?random=8">
+            <p>121 Wallstreet Street, New York , USA</p>
+        </div>
+        <div class="itemle"><img src="https://picsum.photos/70/70/?random=9">
+            <p>info@imperion.com</p></div>
+        <div class="itemle"><img src="https://picsum.photos/70/70/?random=10">
+        <p>+800 1234 5678</p>
+    </div>
+    </div>
+
+
+
+
+    <div class="right">
+        <h1>CONTACT US</h1>
+    <div class="right2">
+        <h2>Drop Us A Line</h2>
+    <div class="info">
+        <div class="item">Name*</div>
+        <div class="item">E-mail*</div>
+        <div class="item">Message</div>
+    </div>
+    <a href="#">
+        <p>SEND MESSAGE</p>
+    </a>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
