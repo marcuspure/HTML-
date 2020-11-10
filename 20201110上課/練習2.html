@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            height: 600px;
+            display: flex;
+            /* flex-direction: column; */
+            background-color: gray;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            flex-basis: 200px;
+            margin: 2px;
+            font-size: 40px;
+            color: white;
+        }
+        .item1{
+            background-color: rgb(252, 30, 204);
+        }
+        .item2{
+            background-color: rgb(31, 31, 255);
+        }
+        .item3{
+            background-color: rgb(247, 168, 21);
+        }
+        .item1{flex-grow: 1;}
+        .item2{flex-grow: 1;}
+        .item3{flex-grow: 1;}
+    </style>
+</head>
+<body>
+    
+<div class="wrap">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+</div>
+
+
+</body>
+</html>
