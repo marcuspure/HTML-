@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="RWD.css">
     <style>
-        .box {
-            /* width: 1500px; */
-
-        }
 
         .container {
             margin-right: auto;
@@ -78,24 +74,25 @@
                 0px -8px 0px red;
         }
 
-        .menu nav {
-            display: flex;
+         .menu nav {
+            /* display: flex; */
             width: 80%;
-            height: 80vh;
+            height: calc(100vh - 50px);
             background-color: rgb(20, 20, 24);
+            position: absolute;
             top: 50px;
             left: -100%;
-            position: absolute;
             transition: .5s;
         }
 
-        .menu nav a {
+        .menu nav a{
             color: rgb(163, 150, 150);
             text-decoration: none;
             padding: 10px;
             margin: 0 15px;
             display: block;
             border-bottom: 1px solid green;
+     
         }
 
         #menu_control:checked~.menu nav {
@@ -113,14 +110,16 @@
 
             nav a {
                 position: relative;
-                left: 0;
+                /* right: 0; */
                 display: flex;
                 width: auto;
                 height: auto;
+               
             }
         }
 
         nav a:hover {
+        
             color: white;
         }
 
@@ -170,7 +169,7 @@
             width: 180px;
             margin-top: 20px;
             margin-bottom: 20px;
-            transition: all .3s font-family: 'Roboto', sans-serif;
+            transition: all .3s font-family 'Roboto', sans-serif;
             text-decoration: none;
         }
 
@@ -193,6 +192,7 @@
             background-color: #edf4f8;
             justify-content: center;
             box-sizing: border-box;
+            margin: 20px;
         }
 
         .secondtxt h3 {
@@ -215,6 +215,8 @@
         .row {
             display: flex;
             flex-wrap: wrap;
+            margin: 20px 0;
+            font-size: 18px;
         }
 
         .row.two {
@@ -223,26 +225,7 @@
 
         }
 
-        @media screen and (max-width: 768px) {
-            .row.two {
-                /* width: 50%; */
-                flex-wrap: wrap;
 
-            }
-
-            .footer {
-                display: flex;
-                text-align: center;
-                flex-wrap: wrap;
-            }
-
-            .footer .end {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                text-decoration: none;
-            }
-        }
 
         .pic {
             text-align: center;
@@ -258,7 +241,8 @@
         .four {
             padding: 40px 0;
             display: flex;
-            background: #faf0ed;
+            background: #eaf2f6;
+            
 
         }
 
@@ -331,17 +315,20 @@
         .six {
             background: #e76e33;
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0;
         }
 
         .content .txt {
             color: white;
             font-size: 28px;
+            padding: 15px 0;
+
         }
 
         .content p {
             color: white;
             font-size: 20px;
+            padding: 15px 0;
         }
 
         .content img {
@@ -351,6 +338,7 @@
         .scroll {
             display: flex;
             justify-content: center;
+            padding: 15px 0;
         }
 
         .dot {
@@ -381,7 +369,7 @@
             display: flex;
             flex-wrap: nowrap;
             width: 100%;
-            padding:5px;
+            padding: 5px;
             font-size: 20px;
 
         }
@@ -389,7 +377,7 @@
         .footer .end a {
             text-decoration: none;
             margin: 0 15px;
-            color:rgb(182, 174, 174);
+            color: rgb(182, 174, 174);
         }
 
         .since {
@@ -399,6 +387,28 @@
 
         .color {
             background: #272727;
+        }
+
+        /* RWD */
+        @media screen and (max-width: 768px) {
+            .row.two {
+                /* width: 50%; */
+                flex-wrap: wrap;
+
+            }
+
+            .footer {
+                display: flex;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+
+            .footer .end {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                text-decoration: none;
+            }
         }
     </style>
 </head>
@@ -571,11 +581,11 @@
         </div>
         <!-- 第四層 -->
         <div class="four">
-            <div class="container">
+            <div class="container col-6 col-lg-6 col-md-12 col-xl-12">
                 <div class="pic">
                     <img src="./images/page01_img03.png" alt="">
                 </div>
-                <div class="fourtxt">
+                <div class="fourtxt col-6 col-lg-6 col-md-12 col-xl-12">
                     <h3>Our Language Center is an official distributor of Oxford University Press</h3>
                     <div class="txt">
                         <span> We offer a wide range of books for teachers and students.
