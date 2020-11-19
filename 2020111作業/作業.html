@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .box {
+            width: 1200px;
+            margin-top: 20px;
+        }
+
+        /* .container {
+            width: 1200px;
+            margin-top: 20px;
+        } */
+
+        /* one */
+        .first {
+            width: 100%;
+            height: 442px;
+            /* height: 500px; */
+            background: url('./page01_img01.png') center top / cover, rgb(50, 79, 248);
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+        }
+
+        /* .pic {
+            height: 400px;
+            width: 100%; */
+
+        }
+
+        .top {
+            color: white;
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: rgb(136, 128, 247);
+            text-decoration: none;
+            padding: 10px;
+            margin: 20px;
+            align-content: center;
+            justify-content: center;
+            font-size: 20px
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* two */
+        .port2 h2 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin: 20px
+        }
+
+        .port2 p {
+            text-align: center;
+            color: rgb(136, 128, 247);
+            font-size: 10px;
+            margin: 20px
+        }
+
+        .port2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        .now {
+            background-color: rgb(255, 72, 0);
+            border-radius: 115px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 115px;
+            padding: 10px 20px;
+            width: 180px;
+            align-content: center;
+            margin-top: 20px;
+        }
+
+        .container2 {
+            padding: 20px 70px;
+            display: flex;
+            background-color: rgb(170, 244, 253);
+        }
+
+        .container2 .left p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .now2 {
+            background-color: rgb(255, 72, 0);
+            border-radius: 115px;
+            color: white;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 115px;
+            padding: 10px 20px;
+            width: 200px;
+            align-content: center;
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        .container3 {
+            padding: 100px;
+        }
+
+        /* three */
+        .container3 h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        .container3 {
+            border: orange solid 1px;
+        }
+
+        .wrap3 {
+            display: flex;
+            border: orange solid 1px;
+            flex-wrap: wrap;
+        }
+
+        .text1 {
+            width: 580px;
+            display: flex;
+            border: orange solid 1px;
+        }
+
+        .all {
+            border: orange solid 1px;
+        }
+
+        /* four */
+        .port4 {
+            display: flex;
+        }
+
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .pic4 {
+            padding: 15px;
+            align-content: center;
+        }
+
+        .txt {
+            padding: 30px;
+        }
+
+        .txt4 {
+            padding: 20px;
+            border: blue solid 1px;
+            align-content: center;
+            padding-top: 60px;
+        }
+
+        .txt4 span {
+            margin: 30px;
+            padding: 15px;
+            color: rgb(183, 183, 207);
+            align-content: center;
+        }
+
+        .txt4 p {
+            margin: 15px;
+            display: block;
+            border: blue solid 1px;
+            justify-content: center;
+        }
+
+        .pic4 {
+            width: 100%;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+
+        /* five */
+
+        .port5 {
+            padding: 20px;
+            height: 200px;
+            display: block;
+            background-color: rgb(92, 20, 160);
+        }
+
+        .txt5 h1 {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .txt5 span {
+            padding-left: 200px;
+            display: flex;
+            color: rgb(124, 119, 119);
+            text-align: center;
+        }
+
+        .mail5 {
+            display: flex;
+            align-content: center;
+            box-sizing: border-box;
+        }
+
+        .mail {
+            background-color: white;
+            border-radius: 115px;
+            display: flex;
+            font-size: 20px;
+            color: gray;
+            padding: 20px 60px;
+            align-content: center
+        }
+
+        .want p {
+            background-color: rgb(255, 136, 0);
+            color: white;
+            border-radius: 115px;
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* six */
+        .container6 {
+            background-color: rgb(250, 74, 4);
+        }
+
+        .container6 p {
+            padding: 30px 200px;
+            display: block;
+            font-size: 20px;
+            align-content: center;
+            text-align: center color: white;
+        }
+
+        .container6 span {
+            display: block;
+            align-content: center;
+            text-align: center
+        }
+
+        .picbottom6 {
+            width: 150px;
+            height: 150px;
+            display: block;
+
+            align-content: center;
+            margin: 0 500px;
+        }
+
+        /* seven */
+        .container7 {
+            width: 100%;
+            display: block;
+            background-color: rgb(39, 37, 37);
+            /* display:flex; */
+
+        }
+
+        .footer {
+            display: flex;
+            height: 100px;
+            align-content: center;
+
+        }
+
+        .nav a {
+            display: flex;
+            text-align: center;
+            margin: auto;
+            align-content: center;
+            border: 1px solid blue;
+            vertical-align: middle;
+
+        }
+
+
+        .container .footer p {
+            color: rgb(245, 241, 241);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div class="containter">
+
+            <div class="wrap">
+                <div class="first">
+                    <!-- <div class="pic"> -->
+                    <!-- one -->
+                    <div class="top">
+                        <h1>Langerba</h1>
+                        <nav>
+                            <a href="#">Home</a>
+                            <a href="#">Abouts</a>
+                            <a href="#">Courses</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Contact Us</a>
+                        </nav>
+                        <p>+1 800 598 78 87
+                        </p>
+                    </div>
+                    <div class="port2">
+                        <h2>Open the world of opportunitied!
+                        </h2>
+                        <p>learn to communicate with the world around you.
+                        </p>
+                        <div class="now">
+                            register now
+                        </div>
+                    </div>
+                </div>
+
+                <!-- two -->
+                <div class="container2">
+
+                    <div class="left">
+                        <h1>Studying Foreign Languages</h1>
+                        <span>Every foreign language has its own monentum</span>
+                        <p>The more you learn, the more you want to learn. Say you love ltalian food and decide to study
+                            ltalian. atfirst it;s hard. But one day you meet some ltalian toursts on the bus and you
+                            dnderstand enough to point them towards their hotel. Before you part ways, they give you
+                            their
+                            e-mail address. Now you can easily communicate with them and study some more.</p>
+                        <div class="now2">REGISTER NOW</div>
+                    </div>
+                    <div class="right">
+                        <div class="pic2">
+                            <img src="./page01_img02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="container3">
+                    <h1>6 reasons to start learn language</h1>
+                    <div class="wrap3">
+
+                        <div class="text1">
+                            <div class="all">
+                                <img src="./messageImage1.jpg" alt="">
+                            </div>
+
+                            <div class="txt">
+                                <h2>English is spoken all over the world</h2>
+                                <p>English is not the most widely spoken language (that title goes to Chinese),but it
+                                    does
+                                    come
+                                    in third, after Spanish.
+                                    And the number of 335 millon native speakers is respectable
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="text1">
+                            <div class="all">
+                                <img src="./messageImage2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2>Education and research opportunities</h2>
+                                <p>Thinking of studying or publishing a research paper? Chances are you will decide to
+                                    learn
+                                    English at some point along the way, or to study at your chosen institution.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="all">
+                                <img src="./messageImage3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2>The language of cinema and music</h2>
+                                <p>If you like going to the movies and are a fan of sitcoms, then English should be on
+                                    your
+                                    list. That's because so many of hte world's films are written and produced in
+                                    English.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- right -->
+
+                        <div class="text1">
+                            <div class="all"><img src="./messageImage4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2>Internaitonal business reqiures English</h2>
+                                <p>In thrms of international commerce, English is the language to learn. when the
+                                    Chinese do
+                                    business in Egypt, the negotiations and transactions happen in English.</p>
+                            </div>
+                        </div>
+
+                        <div class="text1">
+                            <div class="all"><img src="./messageImage5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2>A perfect language for traveling</h2>
+                                <p>If you travel often, you'll note sings tend to come in the local tongue first and
+                                    English
+                                    second. That's because English is considered the most popular international language
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text1">
+                            <div class="all">
+                                <img src="./messageImage6.jpg" alt="">
+                            </div>
+
+                            <div class="txt">
+                                <h2>Hemingway and Harry Potter</h2>
+                                <p>English has neen around for a ling time and English speaking writers have alsways
+                                    been a
+                                    fairly prolific bunch, both in Great Britain and the United States.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- port4 -->
+                    <div class="port4">
+                        <div class="pic4">
+                            <img src="./page01_img03.png" alt="">
+                        </div>
+                        <div class="txt4">
+                            <h1>Our Book Center is an official distributor of Oxoford University Press</h1>
+                            <span>We offer a wide range of books ofr teachers and students.</span>
+                            <p>The Book Center provides schools, language centers,colleges and universities with English
+                                teaching
+                                materials from Seattle to Miami. Our dealers work in almost all staes.</p>
+                        </div>
+                    </div>
+
+                    <!-- port5 -->
+                    <div class="port5">
+                        <div class="txt5">
+                            <h1>Get your free e-mail course!</h1>
+                            <span>30 lessons per week. Upper-intermediate to Advanced levels, course length: 4, 8-12
+                                week</span>
+                        </div>
+
+                        <div class="mail5">
+                            <div class="mail">
+                                <p>Enter your e-mail</p>
+                            </div>
+                            <div class="want">
+                                <p>I WANT A COURSE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- six -->
+
+                    <div class="container6">
+                        <h1>What our students are saying</h1>
+                        <div class="pic6"></div>
+                        <p>Two unforgettable weeks in Langerba! I would like to thank all the teachers for their
+                            positive
+                            spirit,
+                            amazing lessons and hign professionalism.I will miss our lessons!</p>
+                        <span>Anthony Little</span>
+                        <div class="picbottom6">
+                            <img src="./meg07.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- seven -->
+
+
+
+                    <div class="container7">
+                        <h1>Langerba</h1>
+                        <div class="footer">
+                            <nav>
+                                <a href="#">Home</a>
+                                <a href="#">Abouts</a>
+                                <a href="#">Courses</a>
+                                <a href="#">Gallery</a>
+                                <a href="#">Contact Us</a>
+                            </nav>
+                            <img src="./footer.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iste voluptas eum facilis
+                            vel in
+                            harum
+                            perferendis, eligendi expedita, exercitationem ullam nihil aspernatur necessitatibus quam,
+                            debitis
+                            cum
+                            eos! Explicabo, odit?</p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
